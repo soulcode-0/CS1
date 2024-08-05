@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight Sections Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <section class="section section-1">
+        <div class="section-1-content">
+            <div class="left-content">
+                <p>Integral University</p>
+            </div>
+            <div class="right-content">
+                <i class="fas fa-phone-alt"></i> 123-456-7890 &nbsp;
+                <i class="fas fa-envelope"></i> info@iul.ac.in
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-2">
+        <div class="section-2-content">
+            <p>Faculty  of Engineering & Information Technology</p>
+        </div>
+    </section>
+
+    <section class="section section-3">
+        <div class="section-3-content">
+            <p class="s31">HOME</p>
+            <p class="s32">ABOUT</p>
+            <p class="s33">PROGRAM</p>
+            <p class="s34">
+                <div class="dropdown w-dropdown" data-delay="0" data-hover="1" style="max-width: 940px;">
+                    <div class="dropdown-toggle nav-link w-dropdown-toggle w--open">
+                        <div>People</div>
+                        <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+                    </div>
+                    <nav class="dropdown-list w-dropdown-list w--open">
+                         <a class="dropdown-link w-dropdown-link" href="Faculty.aspx">Faculty</a>
+                         <a class="dropdown-link w-dropdown-link" href="SupportingStaff.aspx">Supporting</a>
+                         <a class="dropdown-link w-dropdown-link" href="VisitingFaculty.aspx">Visiting</a>
+                         <a class="dropdown-link w-dropdown-link" href="Alumni.aspx">Alumni</a>
+                    </nav>
+                </div>
+            </p>
+        </div>  
+    </section>
+
+    <section class="section section-4">
+        <div class="content-container">
+            <button id="prev" class="nav-button">&#10094;</button>
+            <div id="slider">
+                <img id="section4-image" src="" alt="Image" class="section4-image">
+                <p id="section4-text" class="section4-text"></p>
+            </div>
+            <button id="next" class="nav-button">&#10095;</button>
+        </div>
+        <!-- New cards container -->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Card 1 content goes here.</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Card 2 content goes here.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Card 3 content goes here.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section class="section section-5">
+        <div class="c5left-content">
+            <h2>Welcome to Our Website</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate est nec diam facilisis, sed fermentum orci fermentum. Curabitur imperdiet feugiat orci at tincidunt. Mauris consectetur erat a urna fermentum, non gravida purus gravida. Praesent a neque eu lorem interdum tempor. Nulla facilisi. Cras et purus ut orci aliquam blandit. Phasellus dapibus suscipit nulla ut lacinia. Integer et nisl lacus. Ut ac ultrices felis, sed bibendum purus.
+            </p>
+        </div>
+        <div class="c5right-content">
+            <div class="news-announcements-container">
+                <h3>AND</h3>
+                <div class="news-announcements">
+                    <ul>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-01
+                            </div>
+                            <a href="#" class="announcement">Announcement 1: Lorem ipsum dolor sit amet.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-02
+                            </div>
+                            <a href="#" class="announcement">Announcement 2: Curabitur imperdiet feugiat orci at tincidunt.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-03
+                            </div>
+                            <a href="#" class="announcement">Announcement 3: Praesent a neque eu lorem interdum tempor.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-04
+                            </div>
+                            <a href="#" class="announcement">Announcement 4: Nulla facilisi. Cras et purus ut orci aliquam blandit.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-05
+                            </div>
+                            <a href="#" class="announcement">Announcement 5: Phasellus dapibus suscipit nulla ut lacinia.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-06
+                            </div>
+                            <a href="#" class="announcement">Announcement 6: Integer et nisl lacus.</a>
+                        </li>
+                        <li>
+                            <div class="date">
+                                <i class="icon">📅</i> 2024-08-07
+                            </div>
+                            <a href="#" class="announcement">Announcement 7: Ut ac ultrices felis, sed bibendum purus.</a>
+                        </li>
+                        <!-- Add more items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-6">
+        <div class="s6card">
+            <div class="blue-part">
+                <h2>Register Your Interest</h2>
+            </div>
+            <div class="white-part">
+                <a href="#" class="get-in-touch">Get in Touch Now</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="s7section-7">
+        <h1>INTEGRAL EVENTS</h1>
+        <p class="s7subheading">Upcoming. Interesting. Engaging.</p>
+        <div class="s7cards-container">
+            <!-- Card 1 -->
+            <div class="s7card">
+                <img src="images/6.avif" alt="Event Image 1" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 1</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-08-01 to 2024-08-07
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event1.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="s7card">
+                <img src="images/7.avif" alt="Event Image 2" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 2</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-08-08 to 2024-08-14
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event2.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="s7card">
+                <img src="images/8.avif" alt="Event Image 3" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 3</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-08-15 to 2024-08-21
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event3.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="s7card">
+                <img src="images/9.avif" alt="Event Image 4" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 4</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-08-22 to 2024-08-28
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event4.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="s7card">
+                <img src="images/7.avif" alt="Event Image 5" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 5</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-08-29 to 2024-09-04
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event5.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="s7card">
+                <img src="images/9.avif" alt="Event Image 6" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 6</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-09-05 to 2024-09-11
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event6.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="s7card">
+                <img src="images/7.avif" alt="Event Image 7" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 7</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-09-12 to 2024-09-18
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event7.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="s7card">
+                <img src="images/7.avif" alt="Event Image 8" class="s7card-image">
+                <div class="s7card-text">
+                    <h2>Event Title 8</h2>
+                    <p class="s7card-date">
+                        <i class="fas fa-calendar-alt"></i> From 2024-09-19 to 2024-09-25
+                    </p>
+                    <p>Event description goes here. It should be concise and informative.</p>
+                    <a href="event8.html" class="s7button">Learn More</a>
+                </div>
+            </div>
+            <!-- Repeat ends -->
+        </div>
+    </section>
+        
+    <section class="section section-8">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h2>CONTACT US</h2>
+                    <p><i class="fas fa-phone-alt"></i> +91 6390011283, 6390011284, 6390011285</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> info@iul.ac.in</p>
+                </div>
+                <div class="footer-column">
+                    <h2>ABOUT US</h2>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Vision & Mission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>USEFUL LINKS</h2>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">HELPDESK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>FOLLOW US</h2>
+                    <p>
+                        <a href="#">Facebook</a> |
+                        <a href="#">Twitter</a> |
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="s8footer-left">Copyright © <a href="#" class="sitecolor">Integral University</a> </p>
+                <p class="s8footer-right">Designed & Developed By: <span class="cellcolor">Software Development Cell</span></p>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

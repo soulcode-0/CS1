@@ -1,0 +1,567 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.section-1 {
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.67); /* Grey background */
+    color: #fafafa; /* White text color for contrast */
+}
+
+.section-1-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: to limit the content width */
+    margin: 0 auto; /* Center align the content */
+}
+
+.left-content p {
+    margin: 0;
+    margin-left: 180px;
+    font-size: 23px; /* Adjust font size as needed */
+    font-family: 'Cinzel', serif; /* Font choice for text */
+}
+
+.right-content {
+    display: flex;
+    margin-right: 140px;
+    align-items: center;
+    font-size: 14px; /* Font size for icons and text */
+}
+
+.right-content i {
+    margin-right: 8px; /* Space between icons and text */
+    font-size: 16px; /* Size of the icons */
+}
+
+.section-2 {
+    height: 74px;
+    background-color: #4f65be; /* Blue */
+    color: white;
+}
+
+.section-2-content {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-3 {
+    height: 75px;
+    background-color: #fff; /* White */
+    color: rgb(5, 5, 5);
+}
+
+.section-3-content {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment and spacing */
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Section 4 Slider */
+.section-4 {
+    height: 590px; /* Adjust height as needed to fit both the slider and cards */
+    position: relative; /* Position relative for the buttons and cards */
+    overflow: hidden; /* Hide any overflow to ensure content stays within bounds */
+    color: white;
+    background-color: #000; /* Optional: background color for better visibility */
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Align items in a column layout */
+    align-items: center;
+    justify-content: center;
+}
+
+#slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Ensure absolute positioning works */
+}
+
+.section4-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the section */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section4-text {
+    position: absolute;
+    bottom: 300px; /* Adjust this to position text above the cards */
+    width: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center; /* Center text horizontally */
+    transition: opacity 0.5s ease-in-out;
+    color: white; /* Ensure the text is visible on the image */
+    white-space: nowrap;
+}
+
+/* Sliding Animation */
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+    padding: 20px 0; /* Add some padding above and below the cards */
+    position: absolute; /* Position absolutely within the section */
+    bottom: 150px; /* Position it at the bottom of the section */
+    width: 100%;
+    z-index: 5; /* Ensure cards are above other content */
+    background-color: rgba(0, 0, 0, 0); /* Optional: background color for contrast */
+}
+
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Adjust padding as needed */
+    width: 280px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.section-6, .section-7, .section-8 {
+    color: white;
+}
+
+/* Section 5 */
+.section-5 {
+    height: 600px; /* Increased height */
+    background-color: #fff; /* White background */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start for better placement */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in height */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.c5left-content {
+    flex: 1;
+    padding-right: 20px; /* Space between left and right sections */
+    margin-top: 70px;
+}
+
+.c5left-content h2 {
+    margin: 0;
+    font-size: 24px;
+    border-bottom: 2px solid grey; /* Grey underline */
+    padding-bottom: 10px; /* Space between text and underline */
+}
+
+.c5left-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.c5right-content {
+    flex: 1;
+    padding-left: 20px; /* Space between left and right sections */
+    max-width: 400px; /* Adjust width as needed */
+    height: 95%; /* Full height to match the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.news-announcements-container {
+    position: relative; /* Position relative to align heading properly */
+    height: 410px; /* Adjust height for the scroller box */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.news-announcements {
+    height: 100%; /* Full height to fit within the container */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background-color: #f5f5f5; /* Light grey background for the scroller box */
+    border: 1px solid #ddd; /* Light grey border for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+.news-announcements h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333; /* Darker color for the heading */
+    position: absolute; /* Position heading above the scroller */
+    top: -20px; /* Position above the box */
+    left: 10px; /* Align heading inside the box */
+    background-color: #fff; /* Background color to cover part of the box */
+    padding: 0 ; /* Add padding around the heading */
+}
+
+.news-announcements ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.news-announcements li {
+    padding: 10px 0; /* Space between items */
+    border-bottom: 1px solid #ddd; /* Divider between items */
+    display: flex; /* Align date and link in a row */
+    flex-direction: column; /* Stack date above the link */
+    gap: 5px; /* Space between date and link */
+}
+
+.news-announcements li:last-child {
+    border-bottom: none; /* Remove divider from the last item */
+}
+
+.news-announcements .date {
+    font-size: 12px;
+    color: #777; /* Light grey color for the date */
+    display: flex; /* Align date and icon */
+    align-items: center; /* Center the icon vertically with the text */
+    gap: 5px; /* Space between icon and date text */
+}
+
+.news-announcements .announcement {
+    font-size: 14px;
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.news-announcements .announcement:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.news-announcements .icon {
+    font-size: 14px; /* Size of the calendar icon */
+    color: #777; /* Match the color with the date */
+}
+
+
+/* Section 6 */
+.section-6 {
+    height: 400px; /* Set the height of the section */
+    position: relative; /* Allows positioning of the card and background image */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+/* Background Image */
+.section-6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/1.jpg') no-repeat center ;
+    background-size: cover; /* Ensure the image covers the full section */
+    z-index: -1; /* Place behind the card */
+}
+
+/* Card Styling */
+.s6card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the card horizontally and vertically */
+    width: 650px; /* Adjust width as needed */
+    max-width: 600px; /* Optional: limit the maximum width */
+    height: 150px; /* 5djust height as needed */
+    background: linear-gradient(to bottom, #4f65be 50%, #fff 50%); /* Blue and white parts */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between text and button */
+    padding: 20px; /* Padding inside the card */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.s6card h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0; /* Space around the heading */
+}
+
+.s6card .white-part{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100vh; 
+}
+
+/* Button Styling */
+.get-in-touch {
+    background-color: #4f65be; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure proper spacing */
+    margin-top: 10px; /* Add space above the button */
+}
+
+
+.get-in-touch:hover {
+    background-color: #3b4f91; /* Darker blue on hover */
+}
+
+/* section7----------> */
+
+.s7section-7 {
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.s7section-7 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Math', sans-serif; /* Adjust font family if 'Math' is not available */
+    font-weight: 300;
+}
+
+.s7section-7 .s7subheading {
+    color: lightgrey;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 5px; /* Adjust underline position if needed */
+    display: inline;
+}
+
+.s7cards-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px;
+}
+
+.s7card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+    width: 930px; /* Adjusted width */
+    max-width: 1000px; /* Adjust as needed */
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.s7card:hover {
+    transform: scale(1.02); /* Slightly enlarges the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+}
+
+.s7card-image {
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.s7card-text {
+    padding: 15px;
+    flex: 1;
+}
+
+.s7card-text h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.s7card-text p {
+    margin: 0;
+    color: #020202;
+}
+
+.s7card-date {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #c2c1c1;
+    display: flex;
+    align-items: center;
+}
+
+.s7card-date i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.s7button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+.s7button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+
+
+.section-8 {
+    background-color: #030303; /* Dark background color */
+    color: #f1f1f1; /* Light text color for contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    font-size: 14px; /* Font size for footer text */
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: auto;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ffffff; /* White color for headings */
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul {
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f6f8f9; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Darker border for separation */
+    display: ruby-text;
+    padding-top: 10px;
+}
+
+
+.footer-bottom .s8footer-left{
+    margin: 0;
+    text-align:start;
+    font-size: 14px;
+    color: #bfbfbf; /* Light gray text color */
+}
+.footer-bottom .s8footer-right{
+    margin: 0;
+    text-align:end;
+    font-size: 14px;
+    color: #bfbfbf; /* Light gray text color */
+}
+
+.footer-bottom a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.cellcolor{
+    color: yellow;
+}
+.sitecolor{
+    color:blue
+}
